@@ -172,7 +172,7 @@ text = font.render(quest_press, True, False, False)
 textRect = text.get_rect()
 textRect.center = (1100, 50)
 while not ur_ded:
-    if quest_press < 1:
+    if int(quest_press) < 1:
         pygame.quit()
         exit()
     if time.time() - time_for_minis > 7:
